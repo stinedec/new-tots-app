@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div(class="black-screen")
+  div(class="main-container")
+      div(class="index-container")
+          h1(class="hello") Hello
+          h2(class="arrows") ← ↑ → ↓
+          div(class="form-container")
+              label(class="form-label" for="inputHue") Personality
+              input(class="form-input hue" type="range" min="0" max="360" id="inputHue" name="inputHue")
+              label(class="form-label" for="inputSensitivity") Sensitivity
+              input(class="form-input" id="inputSensitivity" min="0" max="100" name="inputSensitivity" type="range")
+              button(class="form-button" type="submit" id="submit") Continue?
+      div(id="sketch-container" class="sketch-container")
